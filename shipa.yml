@@ -1,0 +1,26 @@
+kubernetes:
+  processes:
+    web:
+      ports:
+        - name: user-service
+          protocol: TCP
+          port: 5000
+          target_port: 5000
+    worker1:
+      ports:
+        - name: movie-service
+          protocol: TCP
+          port: 5001
+          target_port: 5001
+    worker2:
+      ports:
+        - name: showtime-service
+          protocol: TCP
+          port: 5002
+          target_port: 5002
+    worker3:
+      ports:
+        - name: booking-service
+          protocol: TCP
+          port: 5003
+          target_port: 5003
